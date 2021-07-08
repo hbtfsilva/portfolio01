@@ -17,7 +17,7 @@ header {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: rgba(0,0,0,);
+    background-color: rgba(0,0,0,1);
 
 }
 
@@ -25,5 +25,35 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.5;
+    opacity: .4;
+}
+
+.banner {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+.banner h1 {
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-family: "Poppis", serif;
+    font-weight: 200;
+    text-shadow: .3rem .4rem 2px rgba(0,0,0,.4);
+    line-height: 3.5rem;
+    
+}
+
+.banner p {
+    font-family: "Popps", serif;
+    color: white;
+    font-size: 2rem;
+    text-shadow: .3rem .4rem 2px rgba(0,0,0,.4);
+    margin-bottom: 2rem;
+
+}
+
+.banner button {
+    font-family: "Poppis", serif;
+    
 }
