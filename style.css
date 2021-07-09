@@ -37,7 +37,7 @@ header {
 .banner h1 {
     color: #ffffff;
     font-size: 3.5rem;
-    font-family: "Poppis", serif;
+    font-family: "Poppins", serif;
     font-weight: 200;
     text-shadow: .3rem .4rem 2px rgba(0,0,0,.4);
     line-height: 3.5rem;
@@ -45,7 +45,7 @@ header {
 }
 
 .banner p {
-    font-family: "Popps", serif;
+    font-family: "Poppins", serif;
     color: white;
     font-size: 2rem;
     text-shadow: .3rem .4rem 2px rgba(0,0,0,.4);
