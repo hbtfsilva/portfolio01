@@ -1,7 +1,7 @@
 # Portfolio01
 Portfólio do desenvolvedor
 ## Tarefas
-O controle das taregas desse projeto será realizado no Github
+O controle das tarefas desse projeto será realizado no Github
 
 ## Icons
 
