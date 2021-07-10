@@ -8,4 +8,4 @@ O controle das taregas desse projeto será realizado no Github
 - :package: Nova funcionalidade
 - :up: Formatação de texto
 - 🐞: Correção de bug
-- :checkered: Release
+- :checkered_flag: Release
