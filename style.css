@@ -70,7 +70,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-    font-family: var(--font-action);
+    font-family: var(--font-primary);
     opacity: 0;
 
 }
@@ -153,7 +153,7 @@ header {
 }
 
 .banner button {
-    font-family: var(--font-action);
+    font-family: var(--font-primary);
     color: white;
     background-color: purple;
     background: #6a3093;  /* fallback for old browsers */
@@ -288,7 +288,7 @@ header {
 }
 
 .conhecimento:nth-child(6) {
-    grid-column: 11/ 14;
+    grid-column: 11/ 16;
     grid-row: 5/ -1;
 }
 
@@ -310,6 +310,7 @@ header {
     color: #4b4b4b;
     border-bottom: solid  3px #6a3093;
     margin-bottom: 2rem;
+    padding: 10px;
 
 }
 
@@ -332,11 +333,12 @@ header {
 }
 
 .conhecimento-text {
-    font-family: var(--font-secundary);
+    font-family: var(--font-primary);
     margin-top: 1rem;
 }
 
 .projetos {
+    padding: 2rem;
     display: flex;
     justify-content: space-evenly;
     
@@ -363,7 +365,12 @@ header {
     height: 100%;
     border-radius: .5rem;
     opacity: .6;
+    /*transition: opacity .3s;*/
     
+}
+
+.card:hover .card-img-wrapper img {
+    opacity: .5;
 }
 
 .card-info {
@@ -394,11 +401,24 @@ header {
 }
 
 .card-info p {
-    font-family: var(--font-secundary);
+    font-family: var(--font-primary);
     color: #eee;
     width: 80%;
     margin-bottom: 1rem;
 
+}
+
+.btn-submit {
+    background: #6a3093;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: var(--font-primary);
+    font-size: .8rem;
+    color: #eee;
+    /* border-radius: .5rem; */
+    border: none;
+    box-shadow: 0 .1rem .8rem rgba(0,0,0,.4); 
+    cursor: pointer;
 }
 
 .card-info button {
@@ -407,7 +427,7 @@ header {
     background: #6a3093;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    font-family: var(--font-secundary);
+    font-family: var(--font-primary);
     font-size: .8rem;
     color: #eee;
     border-radius: .5rem;
@@ -422,4 +442,112 @@ header {
     opacity: 1;
     visibility: visible;
     
+}
+
+.sessao-contato {
+    width: 100%;
+    height: 100vh;
+    background-color: #272727;
+    color: white;
+    font-family: var(--font-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contato-wrapper {
+    width: 60%;
+    height: 30rem;
+    display: flex;
+    box-shadow: 0 3rem 3rem rgba(0,0,0,.5);
+
+}
+
+/*
+.contato-left {
+    width: 100%;
+    background-color: #eee;
+    background-size: cover;
+    box-shadow: 0 2rem 5rem rgba(0,0,0,.5);
+}
+*/
+
+.contato-right {
+    width: 65%;
+    background-color: #eee;
+    padding: 2rem 10rem 10rem 10rem;
+    
+}
+
+.sessao-contato h1 {
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-primary);
+    color: #272727;
+    font-size: 2rem;
+    font-weight: lighter;
+    
+}
+
+.sessao-contato form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    color: #272727;  
+
+}
+
+.input-group {
+    position: relative;
+
+}
+
+.field {
+    background: transparent;
+    border: none;
+    width: 30rem;
+    font-size: 1.5rem;
+    font-family: var(--font-primary);
+    border-bottom: 1px solid #636363;
+    height: 2rem;
+    outline: none;
+    margin: 2rem 0;
+
+}
+
+.input-group textarea {
+    padding-top: 1rem;
+    max-width: 30rem;
+    max-height: 5rem;
+
+}
+
+.field-label {
+    position: absolute;
+    left: 0;
+    font-family: var(--font-primary);
+    top: 2rem;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+
+}
+
+.field:focus ~ label {
+    top: 0;
+    font-size: 0.8rem;
+
+}
+
+.field:focus {
+    border-bottom: 1px solid;
+
+}
+
+.btn-submit {
+    font-size: 1.2rem;
+    width: 60%;
+    height: 3rem;
+    margin-top: 1rem;
 }
